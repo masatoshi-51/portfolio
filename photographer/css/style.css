@@ -1,0 +1,222 @@
+/* 全体の要素 */
+html {
+    color: #000;
+    background-color: #fff;
+    font-family: "Noto Sans Japanese",sans-serif;
+}
+body {
+    width: 100%;
+    margin: 0;
+}
+
+#back-btn{
+    display: none;
+    position: fixed;
+    bottom: 38px;
+    right: 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 28px 24px;
+    border-radius: 50%;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.slick-next{
+    right: 0;
+}
+#carousel-section {
+    width: 100%;
+}
+.carouselImg{
+    width: 100%;
+}
+
+.title {
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px;
+}
+/* フェードインさせる要素の初期値を透明に */
+.fade-section{
+    opacity: 0;
+    transition: all 1s;
+}
+/* フェードイン用のクラス */
+.fadeIn{
+    opacity: 1;
+}
+
+#About img {
+    border-radius: 100%;
+}
+.name {
+    font-size: 24px;
+}
+.jikosyoukai ul {
+    font-size: 18px;
+}
+footer {
+    text-align: center;
+}
+
+/* モーダル設定 */
+.modal-1{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+}
+.modal-content{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    width: 80%;
+    max-width: 800px;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+/* PC用のスタイル */
+@media screen and (min-width:768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+    }
+    header a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+    }
+    .midashi {
+        border: solid 1px;
+        font-size: 34px;
+        padding: 10px;
+    }
+    .MyProfile {
+        margin-left: 100px;
+        padding: 10px;
+    }
+    .navi {
+        margin-right: 100px;
+        font-size: 34px;
+    }
+    .navi a {
+        margin: 0 20px;
+    }
+    #About div {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+    #About .jikosyoukai {
+        display: block;
+    }
+    
+    /* worksのスタイル */
+    #works {
+        width: 100%;
+    }
+    .works-1 {
+        display: flex;
+        margin: 100px;
+    } 
+    .works-1 div {
+        width: 33%;
+        text-align: left;
+        margin: 10px;
+    }
+    .works-1 div img {
+        width: 100%;
+        height: auto;
+    }
+    .works-1 div p {
+        word-wrap: break-word;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* スマホ用スタイル */
+@media screen and (max-width:767px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+    }
+    .midashi {
+        border: solid 1px;
+        font-size: 28px;
+        margin-left: 10px;
+        padding: 1px ;
+    }
+    .MyProfile {
+        margin-right: 50px;
+        padding: 0px;
+    }
+    .navi {
+        margin-right: 10px;
+        font-size: 21px;
+    }
+    .nav1{
+        margin-right: 10px;
+    }
+
+   #About {
+    width: 100%;
+   }
+    .about1 {
+        display: block;
+        width: 100%;
+    }
+
+    #About div img {
+        display: block;
+        justify-content: center;
+        margin: auto;
+    }
+    .jikosyoukai {
+        display: block;
+        margin: 50px;
+    }
+    #Works {
+        width: 100%;
+    }
+    #Works .works-1 {
+        width: 100%;
+    }
+    #Works .works-1 div {
+        margin: 40px auto;
+    }
+    #Works .works-1 img {
+        width: 100%;
+        margin: auto;
+        height: auto;
+    }
+    #Works .works-1 p {
+        text-align: center;
+    }
+
+}

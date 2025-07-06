@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>朝比奈 一樹自己紹介</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+     <!-- slickの読み込み -->
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+</head>
+<body>
+    <header>
+        <div class="MyProfile">
+            <h2>
+               <a href="index.html" class="midashi">MyProfile</a>
+            </h2>
+        </div>
+        <div class="navi">
+            <a class="nav1" href="#About">About</a>
+            <a class="nav2" href="#Works">Works</a>
+        </div>
+    </header>
+    <!-- カルーセル -->
+    <section id="carousel-section">
+        <div class="carousel">
+            <div>
+                <img class="carouselImg" src="images/main.png">
+            </div>
+            <div>
+                <img class="carouselImg" src="images/main2.png">
+            </div>
+            <div>
+                <img class="carouselImg" src="images/main3.png">
+            </div>
+        </div>
+    </section>
+    <!-- トップに戻るボタン -->
+     <a id="back-btn" href="#">TOP</a>
+    <section id="About" class="fade-section">
+        <h2 class="title">About</h2>
+        <div class="about1">
+            <div>
+                <img src="images/about.png" alt="自分の写真">
+            </div>
+            <div class="jikosyoukai">
+                <h3 class="name">Kazuki Asahina</h3>
+                <ul>
+                    <li>25歳 長野県佐久市出身</li>
+                    <li>ソフトウェア業界でマーケティングに従事</li>
+                    <li>趣味はカメラ、愛機はCanon</li>
+                    <li>自然を撮影するのが好きで、海や山によく行く</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="Works" class="fade-section">
+        <h2 class="title">Works</h2>
+        <div class="works-1">
+            <div class="modal">
+                <img src="images/works1.png" alt="海の写真">
+                <p>新潟に訪れた際に、日本海の雄大さに魅了されて撮影した1枚</p>
+            </div>
+            <div class="modal">
+                <img src="images/works2.png" alt="山の写真">
+                <p>地元長野の木曽町から撮影した、冠雪した御嶽山</p>
+            </div>
+            <div class="modal">
+                <img src="images/works3.png" alt="京都の街並み">
+                <p>京都で撮影した、明け方の古き良き日本の町並み</p>
+            </div>
+           
+        </div>
+        
+         <!-- モーダル -->
+             <div id="myModal" class="modal-1">
+                <span class="close">✕</span>
+                <img class="modal-content" id="js-modal-img" />
+                <div id="caption"></div>
+             </div>
+    </section>
+    <footer>
+        <p>&copy;MyProfile. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- slickの読み込み -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
